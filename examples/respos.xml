@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ceci est un commentaire parce que c'est important de le préciser -->
+
+<responsables>
+  <directeur_dpt>
+    <prenom>Daniela</prenom>
+    <nom>Dragomirescu</nom>
+    <email>dragomirescu@insa-toulouse.fr</email>
+    <grade>Manitou en chef</grade>
+    <bureau>GEI 208</bureau>
+    <numero_tel></numero_tel>
+  </directeur_dpt>
+
+  <repo_uf>
+    <prenom>Julian</prenom>
+    <nom>Carrey</nom>
+    <email>jcarrey@insa-toulouse.fr</email>
+    <departement href="GEI"></departement>
+  </respo_uf>
+
+  <respo_po>
+    <prenom>Violaine</prenom>
+    <nom>Roussier-Michon</nom>
+    <email>vrm@insa-toulouse.fr</email>
+    <departement href="GMM"></departement>
+    <po href="MIC"></po>
+  </respo_po>
+</responsables>

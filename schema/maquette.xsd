@@ -2,7 +2,10 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:complexType name="sous_uf_t">
 		<xs:attribute name="intitule" type="xs:string" />
+		<xs:attribute name="coef" type="xs:float" />
 		<xs:attribute name="total_presentiel" type="xs:float"/>
+
+		<xs:element name="responsable" type="xs:token" />
 	</xs:complexType>
 
 	<xs:complexType name="uf_t">
@@ -15,9 +18,22 @@
 		<xs:attribute name="eval_par_competences" type="xs:boolean"/>
 		<xs:attribute name="total_presentiel" type="xs:float"/>
 
+		<!-- Chaque sous-uf -->
 		<xs:sequence>
 			<xs:element name="sous_uf" type="sous_uf_t" />
-			<xs:element name="responsable" type="xs:token" />
 		</xs:sequence>
 	</xs:complexType>
+
+	<xs:complexType name="epreuve_t">
+		<xs:attribute name="intitule" type="xs:string" />
+		<xs:attribute name="coef" type="xs:float" />
+	</xs:complexType>
+
+	<!-- type Personne et types héritant de Personne -->
+	<xs:complexType name="personne_t">
+		<xs:attribute name="prenom" type="xs:string" />
+		<xs:attribute name="nom" type="xs:string" />
+		<xs:attribute name="mail" type="xs:string" />
+	</xs:complexType>
+
 </xs:schema>

@@ -4,8 +4,7 @@
 		<xs:attribute name="intitule" type="xs:string" />
 		<xs:attribute name="coef" type="xs:float" />
 		<xs:attribute name="total_presentiel" type="xs:float"/>
-
-		<xs:element name="responsable" type="xs:token" />
+		<xs:element name="responsable" type="" />
 	</xs:complexType>
 
 	<xs:complexType name="uf_t">
@@ -17,23 +16,67 @@
 		<xs:attribute name="heterogene" type="xs:boolean"/>
 		<xs:attribute name="eval_par_competences" type="xs:boolean"/>
 		<xs:attribute name="total_presentiel" type="xs:float"/>
-
-		<!-- Chaque sous-uf -->
+		<xs:element name="responsable" type="" />
 		<xs:sequence>
 			<xs:element name="sous_uf" type="sous_uf_t" />
 		</xs:sequence>
 	</xs:complexType>
-
-	<xs:complexType name="epreuve_t">
-		<xs:attribute name="intitule" type="xs:string" />
-		<xs:attribute name="coef" type="xs:float" />
-	</xs:complexType>
-
+	
 	<!-- type Personne et types héritant de Personne -->
 	<xs:complexType name="personne_t">
 		<xs:attribute name="prenom" type="xs:string" />
 		<xs:attribute name="nom" type="xs:string" />
 		<xs:attribute name="mail" type="xs:string" />
 	</xs:complexType>
+
+	<xs:complexType name="departement_t">
+		<xs:attribute name="anonyme" type="xs:string" />
+		<xs:attribute name="nom" type="xs:string" />
+		<xs:attribute name="dateCreation" type="xs:date" />
+	</xs:complexType>
+
+	<xs:complexType name="directeur_dept_t">
+		<xs:complexContent>
+			<xs:extension base="personne_t">
+				<xs:all>
+					<xs:element name="grade" type="xs:string"/>
+					<xs:element name="bureau" type="xs:string"/>
+					<xs:element name="numTel" type="xs:string"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="responsable_t">
+		<xs:simpleContent>
+			<xs:extension base="personne_t">
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="responsable_po_t">
+		<xs:simpleContent>
+			<xs:extension base="personne_t">
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="semestre_t">
+	  <xs:sequence>
+	    <xs:element name="nom" type="xs:string"/>
+	    <xs:element name="annee" type="xs:integer"/>
+	  </xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="epreuve_t">
+	  <xs:sequence>
+	    <xs:element name="intitule" type="xs:string"/>
+	    <xs:element name="coefficient" type="xs:float"/>
+	    <xs:element name="UF" type="xs:IDREFS"/>
+	  </xs:sequence>
+	<xs:complexType/>
+
+
+
 
 </xs:schema>

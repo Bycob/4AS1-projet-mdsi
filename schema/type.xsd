@@ -7,18 +7,19 @@
 		<xs:attribute name="intitule" type="xs:string" />
 		<xs:attribute name="coef" type="xs:float" />
 		<xs:attribute name="total_presentiel" type="xs:float"/>
-		<xs:element name="responsable" type="" />
+		<xs:attribute name="responsable" type="xs:IDREFS" />
 	</xs:complexType>
 
 	<xs:complexType name="epreuve_t">
-	  <xs:sequence>
 	    <xs:attribute name="intitule" type="xs:string"/>
 	    <xs:attribute name="UF" type="xs:IDREFS"/>
-		</xs:sequence>
-	<xs:complexType/>
+	</xs:complexType>
 
  	<xs:complexType name="uf_t">
- 	  <xs:attribute name="idUF" type="xs:id"/>
+ 		<xs:sequence>
+ 			<xs:element type="sous_uf_t" maxOccurs="unbounded"/>
+ 		</xs:sequence>
+         <xs:attribute name="idUF" type="xs:id"/>
  		<xs:attribute name="intitule" type="xs:string"/>
  		<xs:attribute name="code" type="xs:string"/>
  		<xs:attribute name="coef" type="xs:float"/>
@@ -27,10 +28,7 @@
  		<xs:attribute name="heterogene" type="xs:boolean"/>
  		<xs:attribute name="eval_par_competences" type="xs:boolean"/>
  		<xs:attribute name="total_presentiel" type="xs:float"/>
- 		<xs:element name="responsable" type="xs:IDREFS" />
- 		<xs:sequence>
- 			<xs:element name="sous_uf" type="sous_uf_t" />
- 		</xs:sequence>
+        <xs:attribute name="responsable" type="xs:IDREFS" />
  	</xs:complexType>
 
 	<!-- type Personne et types héritant de Personne -->

@@ -6,7 +6,7 @@
     <xs:sequence>
       <xs:element name="semestre" type="semestre_t" />
     </xs:sequence>
-  <xs:complexType>
+  </xs:complexType>
 
   <xs:element name="maquette" type="maquette_t" />
 </xs:schema>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="http://projet-mdsi.org/XMLSchema.xsd"
-	xmlns="http://projet-mdsi.org/XMLSchema.xsd"
-	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="types">
 
 	<!-- Type UF et types liés -->
 	<xs:complexType name="sous_uf_t">

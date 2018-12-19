@@ -5,24 +5,24 @@
   <directeur_dpt>
     <prenom>Daniela</prenom>
     <nom>Dragomirescu</nom>
-    <email>dragomirescu@insa-toulouse.fr</email>
+    <mail>dragomirescu@insa-toulouse.fr</email>
     <grade>Manitou en chef</grade>
     <bureau>GEI 208</bureau>
-    <numero_tel></numero_tel>
+    <numTel>066888888</numTel>
   </directeur_dpt>
 
   <respo_uf>
     <prenom>Julian</prenom>
     <nom>Carrey</nom>
-    <email>jcarrey@insa-toulouse.fr</email>
+    <mail>jcarrey@insa-toulouse.fr</email>
     <departement href="GEI"></departement>
   </respo_uf>
 
-  <respo_po>
+  <responsable_po>
     <prenom>Violaine</prenom>
     <nom>Roussier-Michon</nom>
-    <email>vrm@insa-toulouse.fr</email>
+    <mail>vrm@insa-toulouse.fr</email>
     <departement href="GMM"></departement>
     <po href="MIC"></po>
-  </respo_po>
+  </responsable_po>
 </responsables>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="personnel">
-<xs:import namespace="types" schemaLocation="type.xsd"/>
+<xs:schema xmlns:types="types"
+  xmlns:pers="pers"
+  targetNamespace="pers"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+
+    <xs:import namespace="types" schemaLocation="type.xsd"/>
     <xs:complexType name="personnes_t">
         <xs:sequence>
             <xs:element name="responsable" type="types:responsable_t" maxOccurs="unbounded"/>
@@ -8,5 +13,5 @@
             <xs:element name="directeur_dept" type="types:directeur_dept_t" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element name="personnes" type="personnes_t"/>
+    <xs:element name="personnes" type="pers:personnes_t"/>
 </xs:schema>

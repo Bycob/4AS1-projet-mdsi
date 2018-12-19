@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:common="types">
+<xs:schema xmlns:types="types"
+  xmlns:maq="maquettes"
+  targetNamespace="maquettes"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+
   <xs:import namespace="types" schemaLocation="type.xsd"/>
   <xs:import namespace="personnel" schemaLocation="personnel.xsd"/>
-    <xs:import namespace="ufs" schemaLocation="uf.xsd"/>
-
-
+  <xs:import namespace="ufs" schemaLocation="uf.xsd"/>
 
   <xs:complexType name="maquette_t">
     <xs:sequence>
-      <xs:element name="semestre" type="semestre_t" maxOccurs="unbounded"/>
+      <xs:element name="semestre" type="types:semestre_t" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 
-  <xs:element name="maquette" type="maquette_t" />
+  <xs:element name="maquette" type="maq:maquette_t" />
 </xs:schema>

@@ -4,7 +4,7 @@
 
   <xs:complexType name="maquette_t">
     <xs:sequence>
-      <xs:element name="semestre" type="semestre_t" />
+      <xs:element name="semestre" type="semestre_t" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 

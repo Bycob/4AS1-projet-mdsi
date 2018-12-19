@@ -14,13 +14,14 @@
 	<xs:complexType name="epreuve_t">
 	    <xs:attribute name="intitule" type="xs:string"/>
 	    <xs:attribute name="UF" type="xs:IDREFS"/>
+			<xs:attribute name="coef" type="xs:float" />
 	</xs:complexType>
 
  	<xs:complexType name="uf_t">
  		<xs:sequence>
  			<xs:element name="sous_uf" type="sous_uf_t" maxOccurs="unbounded"/>
  		</xs:sequence>
-    <xs:attribute name="idUF" type="xs:id"/>
+    <xs:attribute name="idUF" type="xs:IDREFS"/>
  		<xs:attribute name="intitule" type="xs:string"/>
  		<xs:attribute name="code" type="xs:string"/>
  		<xs:attribute name="coef" type="xs:float"/>
@@ -58,17 +59,17 @@
 	</xs:complexType>
 
 	<xs:complexType name="responsable_t">
-		<xs:simpleContent>
+		<xs:complexContent>
 			<xs:extension base="personne_t">
 			</xs:extension>
-		</xs:simpleContent>
+		</xs:complexContent>
 	</xs:complexType>
 
 	<xs:complexType name="responsable_po_t">
-		<xs:simpleContent>
+		<xs:complexContent>
 			<xs:extension base="personne_t">
 			</xs:extension>
-		</xs:simpleContent>
+		</xs:complexContent>
 	</xs:complexType>
 
 	<!-- Type semestre -->

@@ -4,7 +4,7 @@
 
   <xs:complexType name="ufs_t">
     <xs:sequence>
-      <xs:element name="uf" type="uf_t" />
+      <xs:element name="uf" type="uf_t" maxOccurs="unbounded" />
     </xs:sequence>
   </xs:complexType>
 

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:common="types">
 <xs:import namespace="types" schemaLocation="type.xsd"/>
-    <xs:complexType name="personnes">    
+    <xs:complexType name="personnes_t">
         <xs:sequence>
-            <xs:element name="types:responsable_t"/>
-            <xs:element name="types:responsable_po_t"/>
-            <xs:element name="types:directeur_dept_t"/>
+            <xs:element name="responsable" type="types:responsable_t" maxOccurs="unbounded"/>
+            <xs:element name="responsable_po" type="types:responsable_po_t" maxOccurs="unbounded"/>
+            <xs:element name="directeur_dept" type="types:directeur_dept_t" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="personnes"/>
+    <xs:element name="personnes" type="personnes_t"/>
 </xs:schema>
-

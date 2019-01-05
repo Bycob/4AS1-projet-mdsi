@@ -38,7 +38,7 @@
 	<xs:complexType name="personne_t">
 		<xs:attribute name="prenom" type="xs:string" />
 		<xs:attribute name="nom" type="xs:string" />
-		<xs:attribute name="mail" type="xs:string" />
+		<xs:attribute name="email" type="xs:string" />
 	</xs:complexType>
 
 	<xs:complexType name="departement_t">

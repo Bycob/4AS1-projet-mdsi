@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maq:maquette xmlns:maq="maquettes"
+	xmlns:types="types">
+
+  <maq:semestre>
+    <types:uf>I1ANPH21</types:uf>
+  </maq:semestre>
+</maq:maquette>

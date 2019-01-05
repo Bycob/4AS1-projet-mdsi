@@ -25,7 +25,7 @@
 	 		<xs:element name="epreuve" type="types:epreuve_t" maxOccurs="unbounded"/>
  		</xs:sequence>
  		<xs:attribute name="intitule" type="xs:string"/>
- 		<xs:attribute name="code" type="xs:string"/>
+ 		<xs:attribute name="code" type="xs:ID"/>
  		<xs:attribute name="coef" type="xs:float"/>
  		<xs:attribute name="ECTS" type="xs:float"/>
  		<xs:attribute name="obligatoire" type="xs:boolean"/>

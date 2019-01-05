@@ -22,6 +22,7 @@
  	<xs:complexType name="uf_t">
  		<xs:sequence>
  			<xs:element name="sous_uf" type="types:sous_uf_t" maxOccurs="unbounded"/>
+	 		<xs:element name="epreuve" type="types:epreuve_t" maxOccurs="unbounded"/>
  		</xs:sequence>
  		<xs:attribute name="intitule" type="xs:string"/>
  		<xs:attribute name="code" type="xs:string"/>
@@ -36,6 +37,7 @@
 
 	<!-- type Personne et types héritant de Personne -->
 	<xs:complexType name="personne_t">
+		<xs:attribute name="id" type="xs:ID" />
 		<xs:attribute name="prenom" type="xs:string" />
 		<xs:attribute name="nom" type="xs:string" />
 		<xs:attribute name="email" type="xs:string" />

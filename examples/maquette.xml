@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <maq:maquette xmlns:maq="maquettes"
-	xmlns:types="types">
+	xmlns:types="types"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
 
+  <xi:include href="ufs.xml"/>
+	
   <maq:semestre>
     <types:uf>I1ANPH21</types:uf>
   </maq:semestre>

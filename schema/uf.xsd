@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:types="types"
   xmlns:ufs="ufs"
+  xmlns:pers="pers"
   targetNamespace="ufs"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   elementFormDefault="qualified">
 
   <xs:import namespace="types" schemaLocation="type.xsd"/>
+  <xs:import namespace="pers" schemaLocation="personnel.xsd"/>
 
   <xs:complexType name="ufs_t">
     <xs:sequence>
+      <xs:element ref="pers:personnes" />
       <xs:element name="uf" type="types:uf_t" maxOccurs="unbounded" />
     </xs:sequence>
   </xs:complexType>

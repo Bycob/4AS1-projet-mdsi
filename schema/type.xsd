@@ -24,6 +24,7 @@
  			<xs:element name="sous_uf" type="types:sous_uf_t"  minOccurs="0" maxOccurs="unbounded"/>
 	 		<xs:element name="epreuve" type="types:epreuve_t" maxOccurs="unbounded"/>
  		</xs:sequence>
+		<xs:attribute name="grand_domaine" type="xs:string"/>
  		<xs:attribute name="intitule" type="xs:string"/>
  		<xs:attribute name="code" type="xs:ID"/>
  		<xs:attribute name="coef" type="xs:float"/>
@@ -82,7 +83,7 @@
 			<xs:element name="uf" type="xs:IDREFS" maxOccurs="unbounded"/>
 		</xs:sequence>
 	  <xs:attribute name="nom" type="xs:string"/>
-	  <xs:attribute name="annee" type="xs:integer"/>
+	  <xs:attribute name="annee" type="xs:string"/>
 	</xs:complexType>
 
 </xs:schema>

@@ -6,7 +6,7 @@
 
   	<xi:include href="personnel.xml" />
 
-	<ufs:uf intitule="Physique1" code="I1ANPH21" coef="1.00" ECTS="5" obligatoire="true" heterogene="true"
+	<ufs:uf grand_domaine="Science Appliques" intitule="Physique1" code="I1ANPH21" coef="1.00" ECTS="5" obligatoire="true" heterogene="true"  continuite="true"
 		eval_par_competences="true" total_presentiel="70.00" responsable="jcarrey">
 
 		<types:sous_uf intitule="APP d'Optique" coef="0.8" responsable="tblond"
@@ -23,7 +23,7 @@
 	</ufs:uf>
 	
 
-	<ufs:uf intitule="Mathematiques1" code="I1ANNT1" coef="1.00" ECTS="5" obligatoire="true" heterogene="true"
+	<ufs:uf grand_domaine="Science Appliques" intitule="Mathematiques1" code="I1ANNT1" coef="1.00" ECTS="5" obligatoire="true" heterogene="true"   continuite="false"
 		eval_par_competences="true" total_presentiel="87.75" responsable="noble">
 
 		<types:epreuve    intitule="C1 CC1" coef="0.25"></types:epreuve>
@@ -33,12 +33,9 @@
 
 	
 
-
-
-
 	
 
-	<ufs:uf intitule="Chimie Biotechnologie" code="I1ANBC11" coef="1.00" ECTS="6" obligatoire="false" heterogene="false"
+	<ufs:uf  grand_domaine="Science Appliques" intitule="Chimie Biotechnologie" code="I1ANBC11" coef="1.00" ECTS="6" obligatoire="false" heterogene="false"    continuite="false"
 		eval_par_competences="false" total_presentiel="81.5" responsable="mathes">
 		
 		<types:sous_uf intitule="Liansons Chimiques" coef="0.2" responsable="mathes"
@@ -52,6 +49,20 @@
 		<types:epreuve    intitule="E2 Bio"  coef="0.24"></types:epreuve>
 		<types:epreuve    intitule="E3 Chimie" coef="0.39"></types:epreuve>
 		<types:epreuve    intitule="P4 TP" coef="0.18"></types:epreuve>
+	</ufs:uf>
+
+
+	<ufs:uf  grand_domaine="Science humaine" intitule="Communiquer en langue étrangère" code="I1ANLA11" coef="1.00" ECTS="6" obligatoire="false" heterogene="false"    continuite="false"
+		eval_par_competences="false" total_presentiel="45" responsable="brengel">
+		
+		<types:sous_uf intitule="LV1" coef="0.7" responsable="brengel"
+			total_presentiel="30.0"></types:sous_uf>
+		<types:sous_uf intitule="LV2" coef="0.3" responsable="mathes"
+			total_presentiel="15.0"></types:sous_uf>
+
+
+		<types:epreuve    intitule="LV1" coef="0.6"></types:epreuve>
+		<types:epreuve    intitule="LV2"  coef="0.4"></types:epreuve>
 	</ufs:uf>
 
 

@@ -17,6 +17,9 @@
   <pers:responsable id="mathes" prenom="Jean" nom="Maths"
     email="maths@insa-toulouse.fr"></pers:responsable>
 
+	<pers:responsable id="brengel" prenom="Louis" nom="brengel"
+    email="brengel@insa-toulouse.fr"></pers:responsable>
+
 
   
   <pers:responsable_po id="vrm" prenom="Violaine" nom="Roussier-Michon"

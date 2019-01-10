@@ -20,9 +20,9 @@
       </body>
     </html>
   </xsl:template>
-
+  <xsl:variable name="semester" select="/maq:maquette/maq:semestre/@nom"/>
+  <h1>Semestre <xsl:value-of select="$semester"/></h1>
   <xsl:template match="maq:semestre">
-    <h1>Semestre</h1>
     <xsl:apply-templates select="types:uf"/>
   </xsl:template>
 
@@ -53,14 +53,14 @@
             <th>ECTS</th>
         </tr>
         <tr>
-            <td>todo</td>
+            <td><xsl:value-of select="@grand_domaine" /></td>
             <td><xsl:variable name="type_c" select="@obligatoire"/>
                 <xsl:choose>
                     <xsl:when test="$type_c = 'true'">O</xsl:when>
                     <xsl:otherwise>C</xsl:otherwise>
                 </xsl:choose>
             </td>
-            <td>todo</td>
+            <td><xsl:value-of select="$semester" /></td>
             <td>
                 <table>
                     <th>
@@ -91,8 +91,14 @@
                 <xsl:choose>
                     <xsl:when test="$hetero = 'true'">OUI</xsl:when>
                     <xsl:otherwise>NON</xsl:otherwise>
-                </xsl:choose></td>
-            <td>todo</td>
+                </xsl:choose>
+            </td>
+            <td><xsl:variable name="continuite" select="@continuite"/>
+                <xsl:choose>
+                    <xsl:when test="$continuite = 'true'">OUI</xsl:when>
+                    <xsl:otherwise>NON</xsl:otherwise>
+                </xsl:choose>
+            </td>
             <td><xsl:variable name="eval_par_competences" select="@eval_par_competences"/>
                 <xsl:choose>
                     <xsl:when test="$eval_par_competences = 'true'">OUI</xsl:when>

@@ -9,9 +9,9 @@
 	<ufs:uf intitule="Physique1" code="I1ANPH21" coef="1.00" ECTS="5" obligatoire="true" heterogene="true"
 		eval_par_competences="true" total_presentiel="70.00" responsable="jcarrey">
 
-		<types:sous_uf intitule="APP d'Optique" coef="0.8" responsable="tblond"
+		<types:sous_uf intitule="APP d'Optique" coef="0.8" responsable="jcarrey"
 			total_presentiel="40.75"></types:sous_uf>
-		<types:sous_uf intitule="App de Mécanique" coef="0.2" responsable=""
+		<types:sous_uf intitule="App de Mécanique" coef="0.2" responsable="jcarrey"
 			total_presentiel="29.25"></types:sous_uf>
 
 		<types:epreuve    intitule="P0 APP0" coef="0.10"></types:epreuve>

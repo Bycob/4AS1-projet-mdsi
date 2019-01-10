@@ -5,7 +5,20 @@
 
   <xi:include href="ufs.xml"/>
 	
-  <maq:semestre>
+  <maq:semestre nom="S1" annee="1annee">
     <types:uf>I1ANPH21</types:uf>
   </maq:semestre>
+
+	<maq:semestre   nom="S1" annee="1annee">
+    <types:uf>I1ANNT1</types:uf>
+  	</maq:semestre>
+	
+	<maq:semestre nom="S1" annee = "1annee">
+    <types:uf>I1ANBC11</types:uf>
+  	</maq:semestre>
+
+
+	<maq:semestre nom="S1" annee = "1annee">
+    <types:uf>I1ANLA11</types:uf>
+  	</maq:semestre>
 </maq:maquette>

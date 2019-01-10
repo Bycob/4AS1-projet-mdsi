@@ -4,14 +4,14 @@
   xmlns:ufs="ufs"
 	xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <xi:include href="personnel.xml" />
+  	<xi:include href="personnel.xml" />
 
 	<ufs:uf intitule="Physique1" code="I1ANPH21" coef="1.00" ECTS="5" obligatoire="true" heterogene="true"
 		eval_par_competences="true" total_presentiel="70.00" responsable="jcarrey">
 
 		<types:sous_uf intitule="APP d'Optique" coef="0.8" responsable="tblond"
 			total_presentiel="40.75"></types:sous_uf>
-		<types:sous_uf intitule="App de Mécanique" coef="0.2" responsable=""
+		<types:sous_uf intitule="App de Mécanique" coef="0.2" responsable="wescoff"
 			total_presentiel="29.25"></types:sous_uf>
 
 		<types:epreuve    intitule="P0 APP0" coef="0.10"></types:epreuve>
@@ -21,4 +21,38 @@
 		<types:epreuve  intitule="P4_Tpoptique"  coef="0.15"></types:epreuve>
 		<types:epreuve    intitule="P5_APPoptique" coef="0.10"></types:epreuve>
 	</ufs:uf>
+	
+
+	<ufs:uf intitule="Mathematiques1" code="I1ANNT1" coef="1.00" ECTS="5" obligatoire="true" heterogene="true"
+		eval_par_competences="true" total_presentiel="87.75" responsable="noble">
+
+		<types:epreuve    intitule="C1 CC1" coef="0.25"></types:epreuve>
+		<types:epreuve    intitule="C1 CC2"  coef="0.25"></types:epreuve>
+		<types:epreuve    intitule="E3 Examen" coef="0.5"></types:epreuve>
+	</ufs:uf>
+
+	
+
+
+
+
+	
+
+	<ufs:uf intitule="Chimie Biotechnologie" code="I1ANBC11" coef="1.00" ECTS="6" obligatoire="false" heterogene="false"
+		eval_par_competences="false" total_presentiel="81.5" responsable="mathes">
+		
+		<types:sous_uf intitule="Liansons Chimiques" coef="0.2" responsable="mathes"
+			total_presentiel="19.00"></types:sous_uf>
+		<types:sous_uf intitule="Chimie des Solutions" coef="0.4" responsable="mathes"
+			total_presentiel="44.00"></types:sous_uf>
+		<types:sous_uf intitule="Biotechnologies" coef="0.4" responsable="mathes"
+			total_presentiel="18.50"></types:sous_uf>
+
+		<types:epreuve    intitule="C1 CC1" coef="0.19"></types:epreuve>
+		<types:epreuve    intitule="E2 Bio"  coef="0.24"></types:epreuve>
+		<types:epreuve    intitule="E3 Chimie" coef="0.39"></types:epreuve>
+		<types:epreuve    intitule="P4 TP" coef="0.18"></types:epreuve>
+	</ufs:uf>
+
+
 </ufs:ufs>

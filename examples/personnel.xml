@@ -4,18 +4,49 @@
 <pers:personnes xmlns:pers="pers" xmlns:types="types">
   <pers:responsable id="jcarrey" prenom="Julian" nom="Carrey"
     email="jcarrey@insa-toulouse.fr"></pers:responsable>
-  <!--departement href="GEI"></departement-->
 
+
+  <pers:responsable id="wescoff" prenom="Will" nom="Scoff"
+    email="wescoff@insa-toulouse.fr"></pers:responsable>
+
+
+  <pers:responsable id="noble" prenom="Paul" nom="Noble"
+    email="noble@insa-toulouse.fr"></pers:responsable>
+
+
+  <pers:responsable id="mathes" prenom="Jean" nom="Maths"
+    email="maths@insa-toulouse.fr"></pers:responsable>
+
+
+  
   <pers:responsable_po id="vrm" prenom="Violaine" nom="Roussier-Michon"
     email="vrm@insa-toulouse.fr"></pers:responsable_po>
-  <!--departement href="GMM"></departement>
-  <po href="MIC"></po-->
 
+	<!-- departement href="GEI" dateCreation="25/1/1970"></departement -->	  
+	<!--departement href="GMM" dateCreation = "16/2/1962"></departement -->
+  <!--po href="MIC"></po-->
+
+
+	
+
+
+
+
+	
   <pers:directeur_dept id="dragomirescu" prenom="Daniela" nom="Dragomirescu"
     email="dragomirescu@insa-toulouse.fr">
     <types:grade>Manitou en chef</types:grade>
     <types:bureau>GEI 208</types:bureau>
     <types:numTel>066888888</types:numTel>
   </pers:directeur_dept>
+
+
+	<pers:directeur_dept id="paredes" prenom="Manuel" nom="Paredes"
+    email="manuel.paredes@insa-toulouse.fr">
+    <types:grade>Manitou en chef</types:grade>
+    <types:bureau>GM 208</types:bureau>
+    <types:numTel>077777777</types:numTel>
+  </pers:directeur_dept>
+	
 
 </pers:personnes>

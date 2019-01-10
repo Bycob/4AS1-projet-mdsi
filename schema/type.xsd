@@ -21,7 +21,7 @@
 
  	<xs:complexType name="uf_t">
  		<xs:sequence>
- 			<xs:element name="sous_uf" type="types:sous_uf_t" maxOccurs="unbounded"/>
+ 			<xs:element name="sous_uf" type="types:sous_uf_t"  minOccurs="0" maxOccurs="unbounded"/>
 	 		<xs:element name="epreuve" type="types:epreuve_t" maxOccurs="unbounded"/>
  		</xs:sequence>
  		<xs:attribute name="intitule" type="xs:string"/>
@@ -30,6 +30,7 @@
  		<xs:attribute name="ECTS" type="xs:float"/>
  		<xs:attribute name="obligatoire" type="xs:boolean"/>
  		<xs:attribute name="heterogene" type="xs:boolean"/>
+		<xs:attribute name="continuite" type="xs:boolean"/>
  		<xs:attribute name="eval_par_competences" type="xs:boolean"/>
  		<xs:attribute name="total_presentiel" type="xs:float"/>
     <xs:attribute name="responsable" type="xs:IDREFS" />
